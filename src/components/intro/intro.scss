@@ -1,0 +1,178 @@
+@import "../../global.scss";
+
+.intro {
+  background-color: white;
+  display: flex;
+
+  @include mobile{
+    flex-direction:column-reverse;
+    align-items: center;
+  }
+
+  .right {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      background-color: $mainColor;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+      @include md-screen{
+        width: 100%;
+        height: 546px;
+      }
+
+      @include tablet{
+        align-items: flex-start;
+        height: 500px;
+      }
+      @include mobile{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
+
+      img {
+        height: 90%;
+
+        @include tablet{
+          height: 100%;
+        }
+        // @include mobile{
+        //   height: 100%;
+        // }
+      }
+    }
+  }
+  .left {
+    flex: 0.5;
+    position: relative;
+    overflow: hidden;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 100px;
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+
+      @include md-screen{
+        padding-top: 95px;
+      }
+      // justify-content: center;
+
+      @include tablet{
+        padding-left: 58px;
+        // align-items: center;
+      }
+      @include mobile{
+        padding: 0;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+        @include md-screen{
+          font-size: 40px;
+        }
+        @include tablet{
+          &:nth-child(3){
+              font-size: 29px;
+          }
+        }
+        @include mobile{
+          margin: 3px 0;
+        }
+      }
+      h2 {
+        font-size: 35px;
+        @include md-screen {
+            font-size: 30px;
+          }
+      }
+      h3 {
+        font-size: 30px;
+
+        @include md-screen{
+          margin-top: 5px;
+          font-size: 20px;
+        }
+        @include mobile{
+          font-size: 16px;
+        }
+        span {
+          font-size: inherit;
+          color: #3a1090;
+        }
+
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+      }
+    }
+    p{
+      position: absolute;
+      bottom: 10px;
+      left: 5%;
+      color: #3a1090;
+      @include md-screen{
+        left: 0;
+      }
+      @include mobile{
+        display: none;
+      }
+    }
+    a{
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+
+      img {
+        width: 30px;
+        display: block;
+
+        &:first-child{
+          animation: arrowBlink 3s infinite;
+        }
+        &:nth-child(2){
+          animation: arrowBlink 1.5s infinite;
+        }
+         &:last-child{
+          animation: arrowBlink 1.3s infinite;
+
+        }
+      }
+      @include md-screen{
+        left: 50%;
+      }
+      @include tablet{
+        left: 65%;
+      }
+      @include mobile{
+        left: 85%;
+        bottom: 0;
+      }
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

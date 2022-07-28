@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+.social-icons{
+    position: fixed;
+    left: 0px;
+    top: 30vh;
+    padding: 8px;
+    z-index: 10;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(118, 115, 115, 0.2);
+    transition: all 1s ease;
+
+    .icons{
+        display: block;
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: $mainColor;
+        cursor: pointer;
+        @include mobile{
+            font-size: 28px;
+            display: inline;
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+    }
+    .download {
+        margin-bottom: 0;
+        @include mobile{
+            margin-right: 0;
+        }
+    }
+    @include mobile{
+        display: flex;
+        bottom: 0;
+        top: auto;
+        left: 0px;
+        padding: 5px;
+    }
+    &.active {
+        left: 300px;
+        @include mobile{
+            left: auto;
+        }
+        .icons {
+            color: #fff;
+        }
+    }
+    
+}

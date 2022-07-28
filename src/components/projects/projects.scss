@@ -1,0 +1,140 @@
+@import "../../global.scss";
+
+
+.swiper-wrapper {
+  overflow-x: visible !important;
+}
+.projects {
+  background-color: #b8bfc6;
+  overflow: visible !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // height: 350px;
+
+  .arrow {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+
+    @include tablet {
+      display: none;
+    }
+
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
+    }
+
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    max-width: 90%;
+    height: 450px;
+    // display: flex;
+    // position: absolute;
+    // left: 0;
+    // transition: all 1s ease-out;
+
+    // @include tablet {
+    //   height: 100vh;
+    //   flex-direction: column;
+    //   justify-content: center;
+    // }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        width: 380px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // @include tablet {
+        //   width: 80%;
+        //   height: 150px;
+        //   margin: 15px 0;
+        // }
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .imgContainer {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: rgb(245, 179, 155);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              @include tablet {
+                width: 20px;
+                height: 20px;
+              }
+
+              img {
+                width: 25px;
+
+                @include tablet {
+                  width: 15px;
+                }
+              }
+            }
+            h2 {
+              font-size: 20px;
+
+              @include tablet{
+                font-size: 13px;
+              }
+            }
+            p {
+              font-size: 13px;
+            }
+            span a{
+              font-size: 12px;
+              font-weight: 600;
+              color: inherit;
+            }
+          }
+        }
+        .top {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content:center;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 305px;
+          }
+        }
+      }
+    }
+  }
+}

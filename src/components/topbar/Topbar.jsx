@@ -1,6 +1,7 @@
 import "./topbar.scss";
 import {IoIosMail} from  "react-icons/io";
-import { BsFillTelephoneForwardFill} from "react-icons/bs";
+import {BsFillTelephoneForwardFill} from "react-icons/bs";
+// import { MdDarkMode } from "react-icons/md";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
@@ -18,7 +19,8 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </a>
         <div className="right">
           <div className="itemContainer">
-            {/* <Person className="icon" /> */}
+            {/* <BsFillSunFill className="icon"/>
+            <MdDarkMode className="icon"/> */}
             <a href="tel:+2348164940763"><BsFillTelephoneForwardFill className="icon" /></a>
             <a href="tel:+2348164940763"><span>+234 816 494 0763</span></a>
           </div>

@@ -94,4 +94,15 @@
       }
     }
   }
+  &.dark-mode{
+    background-color: #000;
+    color: #fff9ef;
+    .left {
+      .hamburger {    
+        span {
+          background-color: #fff9ef !important;
+        }
+      }
+    }
+  }
 }

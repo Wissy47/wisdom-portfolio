@@ -36,7 +36,7 @@ export default function Projects() {
         "VOSA is a not-for-profit, professional organisation managed by a volunteer committee of music and movement educators.",
       img:
         "./assets/portfolio/vosa_website.png",
-       url:"https://vosa.com/",
+       url:"https://vosa.org/",
     },
      {
       id: "4",

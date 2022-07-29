@@ -10,18 +10,28 @@ import Menu from "./components/menu/Menu";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
 
   return (
     <div className="App">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Topbar
+        displayMode={darkMode}
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+        setDisplayMode={setDarkMode}
+      />
+      <Menu
+        displayMode={darkMode}
+        menuOpen={menuOpen}
+        setMenuOpen={setMenuOpen}
+      />
       <div className="sections">
-        <Intro />
-        <Projects />
-        <Service />
-        <Testimonials /> 
-        <Contact />
+        <Intro displayMode={darkMode} />
+        <Projects displayMode={darkMode} />
+        <Service displayMode={darkMode} />
+        <Testimonials displayMode={darkMode} />
+        <Contact displayMode={darkMode} />
       </div>
     </div>
   );

@@ -8,7 +8,6 @@ import {SiFreelancer} from "react-icons/si";
 
 
 function Socials({activeMenu}) {
-    
     return(
         <div className={"social-icons " +  (activeMenu && "active")}>
             <a href="https://www.linkedin.com/in/wisdom-ighofose-875424128/" target={"_blank"} rel="noreferrer"><BsLinkedin className="icons" /></a>

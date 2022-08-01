@@ -15,7 +15,7 @@ export default function Projects() {
       title: "PooRaiser Web App",
       desc:
         "PooRaiser is a web app built to raise funds for Shelters/Rescue Organization, It feature QR Code and a unique link for each organization.",
-      img: "./assets/portfolio/pooraiser_website.png",
+      img: "./assets/portfolio/pooraiser_website.webp",
       url:"https://pooraiser.com/",
     },
     {
@@ -25,7 +25,7 @@ export default function Projects() {
       desc:
         "A web app that holds pet medical records from different vet in one place for easy access anywhere with the use of unique ID and password",
       img:
-        "./assets/portfolio/vetcareid_website.png",
+        "./assets/portfolio/vetcareid_website.webp",
       url:"https://staging.pooraiser.com/",
     },
     {
@@ -35,7 +35,7 @@ export default function Projects() {
       desc:
         "VOSA is a not-for-profit, professional organisation managed by a volunteer committee of music and movement educators.",
       img:
-        "./assets/portfolio/vosa_website.png",
+        "./assets/portfolio/vosa_website.webp",
        url:"https://vosa.org/",
     },
      {
@@ -45,7 +45,7 @@ export default function Projects() {
       desc:
         "This is a LearnDash wordpress plugin addon that controls the visibility of the taken questions on the statistic overlay of the student profile",
       img:
-       "./assets/portfolio/LD_addon.jpeg",
+       "./assets/portfolio/LD_addon.webp",
       url:"https://github.com/Wissy47/LD-taken-quiz-visibility",
     },
      {
@@ -55,7 +55,7 @@ export default function Projects() {
       desc:
         "An App that use by employee to store data  and also track their targets.",
       img:
-        "./assets/portfolio/handwork_app.png",
+        "./assets/portfolio/handwork_app.webp",
        url:"https://github.com/Wissy47/Data-collection-tool",
     },
   ];

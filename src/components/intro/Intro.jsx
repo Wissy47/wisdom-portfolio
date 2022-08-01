@@ -35,7 +35,7 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="imgContainer">
-          <img src="assets/profilepic.png" alt="Wisdom's profile picture" />
+          <img src="assets/profilepic.webp" alt="Wisdom" />
         </div>
       </div>
     </div>

@@ -3,37 +3,37 @@ export const featuredPortfolio = [
       id: 1,
       title: "Web App Development",
       img:
-        "./assets/services/web-design.jpg",
+        "./assets/services/web-design.webp",
     },
     {
       id: 2,
       title: "Mobile App Development",
       img:
-        "./assets/services/mobile_dev.png",
+        "./assets/services/mobile_dev.webp",
     },
     {
       id: 3,
       title: "E-commerce Web Design",
       img:
-        "./assets/services/e-commercer.png",
+        "./assets/services/e-commercer.webp",
     },
     {
       id: 4,
       title: "Wordpress Plugin/Theme Dev",
       img:
-        "./assets/services/wordpress.jpg",
+        "./assets/services/wordpress.webp",
     },
     {
       id: 5,
       title: "Database Administration",
       img:
-        "./assets/services/database-schema.png",
+        "./assets/services/database-schema.webp",
     },
     {
       id: 6,
       title: "Tech Support",
       img:
-        "./assets/services/tech-support.png",
+        "./assets/services/tech-support.webp",
     },
   ];
   

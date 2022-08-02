@@ -15,7 +15,7 @@ function Socials({activeMenu}) {
             <a href="https://twitter.com/Wissy47" target={"_blank"} rel="noreferrer"><BsTwitter className="icons" /></a>
             <a href="mailto:wisdom.ighofose@gmail.com"><IoIosMail className="icons" /></a>
             <a href="https://www.freelancer.com/u/blackrockwise" target={"_blank"} rel="noreferrer"><SiFreelancer className="icons" /></a>
-            <a href="./assets/resume/wisdom_resume.pdf" download={true}><ImProfile className="icons download" /></a>
+            <a href="./assets/resume/001_WISDOM_IGHOFOSE.pdf" download={true}><ImProfile className="icons download" /></a>
         </div>
     )
 }
